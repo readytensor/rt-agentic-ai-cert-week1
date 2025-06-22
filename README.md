@@ -49,4 +49,4 @@ rt-agentic-ai-cert-week1/
 
 - Email: contact at readytensor dot com
 - Issues or contributions: Please open an issue or pull request on this repository
-- Website: [https://readytensor.com](https://readytensor.com)
+- Website: [https://readytensor.ai](https://readytensor.ai)
