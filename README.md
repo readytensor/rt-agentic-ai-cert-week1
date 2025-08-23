@@ -43,6 +43,10 @@ rt-agentic-ai-cert-week1/
 
 ---
 
+## License
+
+This project is licensed under the CC BY-NC-SA 4.0 License - see the [LICENSE](LICENSE) file for details.
+
 ## Contact
 
 **Ready Tensor, Inc.**
