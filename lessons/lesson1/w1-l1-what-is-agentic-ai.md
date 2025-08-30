@@ -13,6 +13,14 @@
 
  <!-- RT_DIVIDER -->
 
+# TL;DR
+
+Agentic AI is about giving AI systems autonomy — moving from rigid workflows to agents that can plan and act, and eventually to multi-agent teams that collaborate. This lesson introduces that spectrum: workflows as predictable pipelines, agents as decision-makers, and multi-agent systems as coordinated problem-solvers.
+
+---
+
+ <!-- RT_DIVIDER -->
+
 # Week 1: Introduction to Agentic AI Systems
 
 Welcome to the first week of the Agentic AI Developer Certification. This is where our journey begins — by making sense of what exactly “Agentic AI” means, why it matters, and how it fits into the broader story of artificial intelligence.
@@ -36,7 +44,7 @@ Let's begin our journey into the world of Agentic AI 🚀
 
 # Why Agentic AI Matters
 
-Traditional software — and even earlier generations of AI — followed fixed rules and workflows. They executed what we told them, step by step.
+Traditional software, and even earlier AI, followed fixed rules and workflows. They executed what we told them, step by step.
 
 **Agentic AI changes that.** Instead of just following a script, these systems can take a goal you provide and pursue it in flexible, adaptive ways. They can plan, make choices, adapt to obstacles, and act — all in service of the objective you’ve set.
 
@@ -45,8 +53,6 @@ That shift — from scripted execution to autonomous decision-making in pursuit 
 So what exactly are we talking about when we say 'Agentic AI'?
 
 ---
-
- <!-- RT_DIVIDER -->
 
  <!-- RT_DIVIDER -->
 
@@ -75,10 +81,7 @@ We study LLM workflows in Module 1. Single and multi-agent systems are covered i
 
 An **LLM workflow** is a pipeline that connects multiple steps into a repeatable process. For example:
 
-- Step 1: take a user’s question
-- Step 2: retrieve relevant context from a vector database (we will learn about these in Module 1)
-- Step 3: feed that into the LLM with a carefully designed prompt
-- Step 4: return the answer to the user
+A typical workflow: capture the user’s question, retrieve relevant context from a vector database (Module 1), feed that context into the LLM with a well-designed prompt, and return the answer.
 
 ![llm-workflow.jpeg](llm-workflow.jpeg)
 
@@ -106,7 +109,7 @@ Don’t underestimate LLM workflows — they’re often the unsung heroes of pro
 
 So what makes an **agent** different?
 
-Unlike a fixed workflow or chatbot, an agent can **decide what to do next**. Instead of following a rigid script, it evaluates the situation, chooses tools, and adapts if something doesn’t work as expected.
+Unlike a fixed workflow or chatbot, an agent **decides what to do next**: it evaluates the situation, chooses tools, and adapts if something doesn’t work.
 
 ![single-agent-system.jpeg](single-agent-system.jpeg)
 
@@ -141,7 +144,42 @@ In these systems, multiple agents with different strengths work together. Some m
 
 You don’t need to worry about the details of agentic patterns yet. Just know that there are many patterns, and in **Module 2** we’ll dig into Reflection, Supervisor, Competitive, and other architectures. For now, it’s enough to know that **Agentic AI spans from workflows → single agents → teams of agents.**
 
-At Ready Tensor, for example, we are currently working on a Agentic Authoring Assistant (AAA) system that helps users create high-quality content more efficiently by leveraging the power of multiple AI agents working together. We will work on various components of the AAA system in modules 2 and 3 of this program.
+At Ready Tensor, for example, we are currently working on an Agentic Authoring Assistant (A3) system that helps users create high-quality content more efficiently by leveraging the power of multiple AI agents working together. We will work on various components of the A3 system in modules 2 and 3 of this program.
+
+---
+
+ <!-- RT_DIVIDER -->
+
+At this point, you’ve seen the full spectrum:
+
+- **Workflows** that follow clear, predefined paths
+- **Single agents** that decide and adapt on their own
+- **Multi-agent systems** that coordinate teams of agents for bigger problems
+
+This progression — from workflows to single agents to teams of agents — is the foundation of Agentic AI. Over the next modules, we’ll move from building simple workflows to designing and deploying full multi-agent systems.
+
+Before we go further, take a moment to reflect on what these differences mean in practice.
+
+---
+
+ <!-- RT_DIVIDER -->
+
+# Reflection
+
+- Think of an AI system you’ve used recently (e.g., ChatGPT, GitHub Copilot, a support chatbot). Did it feel like a workflow tool following a script, or more like an agent making choices? What clues made you feel that way?
+- Where do you think most real-world AI applications sit right now: workflows, single agents, or multi-agent systems? Where do you think things are headed in the next few years?
+- Suppose you were tasked with writing a movie script and you want an AI system to help. Is this a workflow application, or a multi-agent system?
+- As you begin this certification, which excites you more: building reliable workflows or experimenting with flexible agents?
+
+---
+
+ <!-- RT_DIVIDER -->
+
+# Test Your Understanding
+
+Check out this short video that asks some critical questions about Agentic AI:
+
+:::youtube[Title]{#p4YLpCTAdA8}
 
 ---
 
@@ -156,21 +194,6 @@ This week is all about laying foundations. You now have a high-level mental mode
 - Multi-agent systems coordinate groups of agents to tackle complex tasks.
 
 In the next lesson, we’ll zoom in on the **core components of an agent** — LLMs, tools, memory, planning, and more. Those building blocks will carry through the rest of the program.
-
----
-
- <!-- RT_DIVIDER -->
-
-# Reflect and Test Your Understanding 🎥
-
-Before moving on, take a moment to reflect:
-
-- The last time you used an AI tool (e.g., a support chatbot on some website), did it feel more like a workflow (predictable pipeline) or an agent (making choices)?
-- What clues made you think so?
-
-And then, check out this short video that asks some critical questions about Agentic AI:
-
-:::youtube[Title]{#p4YLpCTAdA8}
 
  <!-- RT_DIVIDER -->
 
