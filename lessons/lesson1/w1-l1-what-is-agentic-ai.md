@@ -1,15 +1,21 @@
 ![AAIDC- What is agentic ai - hero.webp](AAIDC-%20What%20is%20agentic%20ai%20-%20hero.webp)
 
---DIVIDER-----
+ <!-- RT_DIVIDER -->
+
+---
+
+[🏠 Home - All Lessons](https://app.readytensor.ai/hubs/ready_tensor_certifications)
 
 [⬅️ Previous - Module 1 Project Description](https://app.readytensor.ai/publications/4n07ViGCey0l)
 [➡️ Next - Agentic AI Core Components](https://app.readytensor.ai/publications/O8OHY0ehCvdr)
 
 ---
 
+ <!-- RT_DIVIDER -->
+
 # Week 1: Introduction to Agentic AI Systems
 
-Welcome to the first week of our comprehensive Agentic AI Certification program. I'm excited to guide you through this fascinating field that's transforming how we interact with artificial intelligence technologies.
+Welcome to the first week of the Agentic AI Developer Certification. This is where our journey begins — by making sense of what exactly “Agentic AI” means, why it matters, and how it fits into the broader story of artificial intelligence.
 
 ## What You'll Learn This Week
 
@@ -24,109 +30,153 @@ By the end of this week, you'll have a solid understanding of:
 
 Let's begin our journey into the world of Agentic AI 🚀
 
------DIVIDER--## Understanding Agentic AI: The Revolution in Artificial Intelligence
+---
 
-### What is Agentic AI?
+ <!-- RT_DIVIDER -->
 
-Over the past year, the AI landscape has been dominated by discussions around GenAI (Generative AI), Agentic AI, and RAG (Retrieval-Augmented Generation) systems. But what exactly is Agentic AI?
+# Why Agentic AI Matters
 
-**Agentic AI** is fundamentally the "autonomy engine" for AI systems. It represents the intelligence and methodology that enables AI systems to act independently (the "how" behind their ability to plan, decide, and execute tasks without constant human guidance). Think of it as the framework and mindset for building AI systems that truly "think for themselves."
+Traditional software — and even earlier generations of AI — followed fixed rules and workflows. They executed what we told them, step by step.
 
-Unlike traditional AI systems that follow strict, predefined rules, Agentic AI brings a proactive, goal-oriented approach to problem-solving. It's a significant shift from reactive systems to proactive ones that can take initiative.
+**Agentic AI changes that.** Instead of just following a script, these systems can take a goal you provide and pursue it in flexible, adaptive ways. They can plan, make choices, adapt to obstacles, and act — all in service of the objective you’ve set.
 
-:::info{title="Simpler Definition of AI Agents"}
-According to HuggingFace, AI Agents are programs where LLM outputs control the workflow. This definition relies strictly on the autonomy aspect of agentic systems.
-:::--DIVIDER--
+That shift — from scripted execution to autonomous decision-making in pursuit of goals — is what makes Agentic AI powerful. It’s the difference between a tool that follows instructions and a collaborator that gets work done.
 
-### AI Agents: The Building Blocks of Agentic AI
+So what exactly are we talking about when we say 'Agentic AI'?
 
-**AI agents** are systems powered by AI (typically Large Language Models or LLMS) that interact with software, data, and even hardware to achieve specific goals. They function as proactive problem-solvers who autonomously complete tasks, make decisions, and adapt to new information without micromanagement.
+---
+
+ <!-- RT_DIVIDER -->
+
+ <!-- RT_DIVIDER -->
+
+# What is Agentic AI?
+
+At its simplest, **Agentic AI is the autonomy engine for AI systems**. It’s the set of methods and design principles that let AI go beyond static scripts and start operating with initiative.
+
+To make sense of this, it helps to think of Agentic AI as a **progression**:
+
+1.  **Large Language Model (LLM) Workflows**  
+    Here, the logic and flow are defined by us, the developers. The LLM is a component inside a predictable pipeline. Every step is laid out, and while the outputs may vary, the structure is fixed.
+
+2.  **Single-Agent Systems**  
+    Instead of a rigid pipeline, the AI itself can make decisions. An agent can decide _how_ to solve a problem, which tools to use, and in what order. It’s no longer just executing a flow — it’s reasoning and choosing.
+
+3.  **Multi-Agent Systems**  
+    Now imagine multiple agents, each with a role, collaborating on tasks. Some may coordinate centrally (like a supervisor assigning work), others may coordinate in a more decentralized way (like peers handing off tasks and exchanging information). This opens the door to much more complex, human-like teamwork.
+
+We study LLM workflows in Module 1. Single and multi-agent systems are covered in Modules 2 and 3.
+
+---
+
+ <!-- RT_DIVIDER -->
+
+## LLM Workflows
+
+An **LLM workflow** is a pipeline that connects multiple steps into a repeatable process. For example:
+
+- Step 1: take a user’s question
+- Step 2: retrieve relevant context from a vector database (we will learn about these in Module 1)
+- Step 3: feed that into the LLM with a carefully designed prompt
+- Step 4: return the answer to the user
+
+![llm-workflow.jpeg](llm-workflow.jpeg)
+
+That’s a workflow — clear, predictable, and testable. In fact, many real-world systems — like customer support assistants or domain-specific research tools — are built entirely on workflows like these.
+
+At Ready Tensor, for example, our publication assessment tool is a workflow: publication + assessment criteria → evaluation report. It feels smart, but under the hood it’s a straightforward LLM-driven pipeline.
+
+By definition, workflows don’t really have **autonomy**. They don’t decide on their own what to do next — every step is predefined. So are they truly agentic? We treat them as part of the agentic family because they use LLMs intelligently to accomplish impressive tasks, and more importantly, they form the foundation you build on before progressing to truly autonomous agents.
+
+It’s also worth noting that a **well-designed workflow can often outperform a multi-agent system**. With clever prompting, careful orchestration, and the right tools, workflows are usually **faster, cheaper, and more reliable** than complex agent architectures — which is why they’re often the preferred production choice.
+
+---
+
+ <!-- RT_DIVIDER -->
+
+:::tip{title="Tip"}
+Don’t underestimate LLM workflows — they’re often the unsung heroes of production AI.
+:::
+
+---
+
+ <!-- RT_DIVIDER -->
+
+## Meet the Agent
+
+So what makes an **agent** different?
+
+Unlike a fixed workflow or chatbot, an agent can **decide what to do next**. Instead of following a rigid script, it evaluates the situation, chooses tools, and adapts if something doesn’t work as expected.
+
+![single-agent-system.jpeg](single-agent-system.jpeg)
+
+At its core, this means agents can:
+
+- **Plan** based on user input
+- **Decide** autonomously
+- **Act** to achieve an outcome
 
 ![plan-decide-execute.jpg](plan-decide-execute.jpg)
 
-What sets AI agents apart from basic automation or chatbots?
-It's their ability to:
+A useful way to think about this is the OODA loop: **Observe → Orient → Decide → Act**.
 
-- **Plan** independently based on user input
-- **Make decisions** autonomously
-- **Execute actions** to achieve desired outcomes
+- **Observe**: gather input (a question, a document, an event).
+- **Orient**: analyze and identify what matters.
+- **Decide**: pick the next action (tool, prompt, or path).
+- **Act**: execute — then loop back to observe.
 
-AI agents operate using a looped decision-making process often referred to as **OODA (Observe–Orient–Decide–Act)**. At the core is a Large Language Model (LLM), often supported by memory, planning modules, and tool access. Here's how the cycle works:
-
-1.  **Observe**: Gather input from the environment. This could be user queries, documents, sensor data, or tool outputs.
-
-2.  **Orient**: Analyze the context, assess available tools, and understand what’s needed to solve the problem.
-
-3.  **Decide**: Select the next best action based on goals, constraints, and prior steps.
-
-4.  **Act (Execute)**: Perform the action. This might mean calling a function, retrieving information, or interacting with another agent.
-
---DIVIDER--
-
-You can have a single agent working all by itself to complete tasks or multiple agents working together to complete a task. When you have multiple agents working together, it is called a multi-agent system.
+This decision loop gives agents their flexibility: they can retry with a different tool, re-plan when blocked, and adapt in ways static workflows can’t.
 
 ---
 
-# Multi-Agent Systems (MAS): When Agents Collaborate
+ <!-- RT_DIVIDER -->
 
-A **multi-agent system (MAS)** involves multiple AI agents working together to tackle tasks for a user or system. Instead of relying on a single "do-it-all" agent, MAS employs a team of specialised agents working collaboratively.
+## From One Agent to Many
 
-Thanks to their flexibility, scalability, and domain expertise of the different agents, multi-agent systems can solve complex real-world problems that might be too challenging for a single agent. Imagine you are the only one working on Apple Silicon - you will go mad before you can realise your goal. But if you have many other people helping you, tasks become easier, more managed, and faster. This is the advantage of multi-agent systems, which has made them increasingly popular.
+Now imagine scaling up. One agent is useful. But some problems are too complex for a single agent to handle. That’s where **multi-agent systems** come in.
 
-Below, we are going to explore various multi-agent architectures:
+In these systems, multiple agents with different strengths work together. Some may take a **centralized approach** — a supervisor agent decides who does what. Others may coordinate in a **decentralized way**, like peers exchanging information until the problem is solved.
 
-### MAS Architectures
+![multi-agent-systems.jpeg](multi-agent-systems.jpeg)
 
-**1. Centralized Networks**
+You don’t need to worry about the details of agentic patterns yet. Just know that there are many patterns, and in **Module 2** we’ll dig into Reflection, Supervisor, Competitive, and other architectures. For now, it’s enough to know that **Agentic AI spans from workflows → single agents → teams of agents.**
 
-In centralized networks, a central agent contains the global knowledge base, connects to all other agents, and oversees their information flow.
+At Ready Tensor, for example, we are currently working on a Agentic Authoring Assistant (AAA) system that helps users create high-quality content more efficiently by leveraging the power of multiple AI agents working together. We will work on various components of the AAA system in modules 2 and 3 of this program.
 
-**Strengths:**
+---
 
-- Easier communication between agents
-- Uniform knowledge distribution
-- Clear hierarchy and coordination
+ <!-- RT_DIVIDER -->
 
-**Weaknesses:**
+# Looking Ahead
 
-- Dependent on the central agent
-- If the central agent fails, the entire system fails
+This week is all about laying foundations. You now have a high-level mental model:
 
-**Example:** Like a conductor directing an orchestra, ensuring each musician plays their part correctly. Similarly, a CEO assigns specific tasks to team members based on their expertise and monitors overall progress.
+- Workflows are predictable pipelines (our main focus in Module 1).
+- Agents bring autonomy — they plan, decide, and act.
+- Multi-agent systems coordinate groups of agents to tackle complex tasks.
 
-**2. Decentralized Networks**
+In the next lesson, we’ll zoom in on the **core components of an agent** — LLMs, tools, memory, planning, and more. Those building blocks will carry through the rest of the program.
 
-In decentralized networks, there's no central agent controlling information. Agents share information with their neighbours in a distributed manner.
+---
 
-**Strengths:**
+ <!-- RT_DIVIDER -->
 
-- Greater robustness—failure of one agent doesn't crash the system
-- More flexibility and modularity
-- Can handle more complex, distributed tasks
+# Reflect and Test Your Understanding 🎥
 
-**Weaknesses:**
+Before moving on, take a moment to reflect:
 
-- Coordination challenges
-- Potential inefficiencies in information sharing
-- More complex to design and implement
+- The last time you used an AI tool (e.g., a support chatbot on some website), did it feel more like a workflow (predictable pipeline) or an agent (making choices)?
+- What clues made you think so?
 
-**Example:** A flock of birds adjusting flight patterns without a leader, each responding to its immediate neighbours. Similarly, independent workers coordinating through a shared platform, where each contributes their expertise without centralized management.
-
-The choice between centralized and decentralized architectures depends on the specific requirements of the task, the reliability needs of the system, and the complexity of the environment in which the agents operate.
-
---DIVIDER--
-
-# 🎥 Reflect and Test Your Understanding
-
-After reading this lesson, it’s time to put your thinking to the test.
-
-We’ve put together a short video that doesn’t give you answers, but instead challenges you with critical questions about Agentic AI. Use it to assess how well you understand the material, and to deepen your insight through reflection. 👉 Watch the video here:
+And then, check out this short video that asks some critical questions about Agentic AI:
 
 :::youtube[Title]{#p4YLpCTAdA8}
 
---DIVIDER--
+ <!-- RT_DIVIDER -->
 
 ---
+
+[🏠 Home - All Lessons](https://app.readytensor.ai/hubs/ready_tensor_certifications)
 
 [⬅️ Previous - Module 1 Project Description](https://app.readytensor.ai/publications/4n07ViGCey0l)
 [➡️ Next - Agentic AI Core Components](https://app.readytensor.ai/publications/O8OHY0ehCvdr)
