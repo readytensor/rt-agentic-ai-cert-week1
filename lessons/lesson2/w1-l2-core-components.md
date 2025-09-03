@@ -120,7 +120,7 @@ Anyone can connect an LLM to a database or a set of tools. But getting that syst
 
 Smart people don’t tackle big tasks in one leap. They break them down. “First I’ll gather information, then I’ll outline the key points, then I’ll write.”
 
-Agents need the same habit. Through strategies like **Chain-of-Thought prompting** or **self-ask** (covered later this week), we guide them to think in steps rather than blurting out a final answer.
+Agents need the same habit. Through strategies like **Chain-of-Thought prompting** or **self-ask** (covered in next week's lessons), we guide them to think in steps rather than blurting out a final answer.
 
 ![planning-workflow.png](planning-workflow.png)
 
@@ -134,7 +134,7 @@ Prompting agents to plan makes their behavior more aligned to the demands of the
 
 When you face a question like _“Where’s the best place to visit in Italy in October?”_ you don’t just blurt “Rome.” You consider the weather, the type of trip, the season.
 
-Agents can be nudged into the same careful reasoning. Patterns like **ReAct** push them to weigh options, use tools, and explain choices. You will learn about ReAct later in this week.
+Agents can be nudged into the same careful reasoning. Patterns like **ReAct** push them to weigh options, use tools, and explain choices. You will learn about ReAct later in this module.
 
 ![reasoning-workflow.png](reasoning-workflow.png)
 
